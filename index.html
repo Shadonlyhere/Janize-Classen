@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>A Tribute to Janize Classen</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<script defer src="script.js"></script>
+
+</head>
+
+<body>
+
+<!-- Background Music -->
+<audio id="bgMusic" loop>
+    <source src="background.mp3" type="audio/mpeg">
+</audio>
+
+<!-- Floating Background -->
+<div class="background"></div>
+
+<!-- Progress Bar -->
+<div id="progressBar"></div>
+
+<!-- Slide 1 -->
+
+<section class="slide active" id="slide1">
+
+<img src="logo.png" class="logo">
+
+<h1>Welcome</h1>
+
+<h2>A Very Special Message</h2>
+
+<p>
+
+This website has been created for one very special person.
+
+Before we begin, we need to confirm your identity.
+
+</p>
+
+<button onclick="nextSlide()">
+
+Continue
+
+</button>
+
+</section>
+
+<!-- Slide 2 -->
+
+<section class="slide" id="slide2">
+
+<h1>Verification Required</h1>
+
+<p>
+
+Are you Janize Classen?
+
+</p>
+
+<div class="buttons">
+
+<button onclick="nextSlide()">
+
+Yes
+
+</button>
+
+<button onclick="wrongPerson()">
+
+No
+
+</button>
+
+</div>
+
+</section>
+
+<!-- Slide 3 -->
+
+<section class="slide" id="slide3">
+
+<h1>Final Verification</h1>
+
+<p>
+
+Are you one of the greatest leaders to ever walk through Abracon?
+
+</p>
+
+<div class="buttons">
+
+<button onclick="nextSlide()">
+
+Absolutely
+
+</button>
+
+<button onclick="invalidAnswer()">
+
+No
+
+</button>
+
+</div>
+
+</section>
+
+<!-- Slide 4 -->
+
+<section class="slide" id="slide4">
+
+<h1>One Last Check...</h1>
+
+<p>
+
+Can the Efficiency and Quality Department confirm that you are one of the greatest bosses on Earth?
+
+</p>
+
+<button onclick="celebrate()">
+
+100% YES
+
+</button>
+
+</section>
+
+<!-- Slide 5 -->
+
+<section class="slide" id="slide5">
+
+<h1>Congratulations!</h1>
+
+<h2>Identity Confirmed</h2>
+
+<p>
+
+Access Granted.
+
+Please enjoy this special tribute created with appreciation and respect.
+
+</p>
+
+<button onclick="nextSlide()">
+
+Begin
+
+</button>
+
+</section>
+
+<!-- Slide 6 -->
+
+<section class="slide" id="slide6">
+
+<img src="factory.jpg" class="heroImage">
+
+<h1>Abracon</h1>
+
+<p>
+
+Abracon was built many years ago.
+
+Every successful company begins with a strong foundation.
+
+That foundation was built by hardworking men and women who dedicated their lives, their passion, and their strength.
+
+Without them, none of us would have the privilege of working in the environment we know today.
+
+</p>
+
+<button onclick="nextSlide()">
+
+Continue
+
+</button>
+
+</section>
+
+<!-- Slide 7 -->
+
+<section class="slide" id="slide7">
+
+<img src="team.jpg" class="heroImage">
+
+<h1>Strong Foundations</h1>
+
+<p>
+
+Foundations are not only built with bricks and steel.
+
+They are built by leaders.
+
+By people who choose courage over fear.
+
+By people who continue standing even when life becomes difficult.
+
+</p>
+
+<button onclick="nextSlide()">
+
+Continue
+
+</button>
+
+</section>
+<!-- Slide 8 -->
+
+<section class="slide" id="slide8">
+
+<img src="janize.jpg" class="heroImage">
+
+<h1>One Of Those People Is You</h1>
+
+<p>
+
+Janize Classen,
+
+Your leadership, kindness, resilience and unwavering commitment have touched the lives of so many people.
+
+Every challenge you have faced has become another reason for us to admire the person you are today.
+
+You have inspired people without even realizing it.
+
+</p>
+
+<button onclick="nextSlide()">
+Continue
+</button>
+
+</section>
+
+<!-- Slide 9 -->
+
+<section class="slide" id="slide9">
+
+<img src="cross.jpg" class="heroImage">
+
+<h1>Built On Faith</h1>
+
+<p>
+
+Every strong foundation begins with Christ.
+
+His love, grace and mercy have carried this company through many seasons.
+
+Through every challenge and every victory, God has remained faithful.
+
+He places people in our lives for a purpose.
+
+We truly believe He placed you here for one.
+
+</p>
+
+<button onclick="nextSlide()">
+Continue
+</button>
+
+</section>
+
+<!-- Slide 10 -->
+
+<section class="slide" id="slide10">
+
+<h1>You Never Gave Up</h1>
+
+<p>
+
+When difficult moments came...
+
+You remained strong.
+
+When pressure increased...
+
+You continued leading.
+
+When others needed encouragement...
+
+You were there.
+
+That strength has inspired every member of this department.
+
+</p>
+
+<button onclick="nextSlide()">
+Continue
+</button>
+
+</section>
+
+<!-- Slide 11 -->
+
+<section class="slide" id="slide11">
+
+<img src="team2.jpg" class="heroImage">
+
+<h1>From Your Department</h1>
+
+<p>
+
+This tribute comes from your Efficiency and Quality Department.
+
+Some of us may not be here today.
+
+But every one of us appreciates everything you have done.
+
+Thank you for believing in us.
+
+Thank you for guiding us.
+
+Thank you for always standing beside us.
+
+</p>
+
+<button onclick="nextSlide()">
+Continue
+</button>
+
+</section>
+
+<!-- Slide 12 -->
+
+<section class="slide" id="slide12">
+
+<h1>A Special Video</h1>
+
+<p>
+
+Before we continue...
+
+Please enjoy this special message.
+
+</p>
+
+<video id="tributeVideo" controls>
+
+<source src="tribute.mp4" type="video/mp4">
+
+</video>
+
+<br><br>
+
+<button onclick="nextSlide()">
+
+Continue
+
+</button>
+
+</section>
+
+<!-- Slide 13 -->
+
+<section class="slide" id="slide13">
+
+<h1>A Message For You</h1>
+
+<p>
+
+Janize,
+
+Never forget that you are one of the greatest people to ever walk through this company.
+
+Your leadership, resilience and strength have inspired those around you in ways you may never fully realize.
+
+You are a fighter.
+
+A leader.
+
+A mentor.
+
+A blessing.
+
+Every trial you have overcome has made you stronger.
+
+God has watched over you.
+
+He has strengthened you.
+
+He has carried you through every difficult season.
+
+And He will continue doing so.
+
+</p>
+
+<button onclick="nextSlide()">
+
+Continue
+
+</button>
+
+</section>
+
+<!-- Slide 14 -->
+
+<section class="slide" id="slide14">
+
+<h2>Isaiah 41:10</h2>
+
+<blockquote>
+
+"So do not fear, for I am with you;
+
+do not be dismayed,
+
+for I am your God.
+
+I will strengthen you and help you;
+
+I will uphold you with my righteous right hand."
+
+</blockquote>
+
+<button onclick="nextSlide()">
+
+Continue
+
+</button>
+
+</section>
+<!-- Slide 15 -->
+
+<section class="slide" id="slide15">
+
+<h1>Thank You</h1>
+
+<p>
+
+Never forget that you are loved.
+
+You are valued.
+
+You are appreciated.
+
+There is no one who can take your crown except yourself, because God is protecting you, guiding your steps, and lifting you higher with every season of your life.
+
+Keep believing in yourself, because He certainly believes in you.
+
+Thank you for your leadership.
+
+Thank you for your courage.
+
+Thank you for your wisdom.
+
+Thank you for making a difference every single day.
+
+</p>
+
+<button onclick="nextSlide()">
+Continue
+</button>
+
+</section>
+
+<!-- Slide 16 -->
+
+<section class="slide" id="slide16">
+
+<h1>With Love</h1>
+
+<h2>Your Efficiency & Quality Department</h2>
+
+<p>
+
+Every smile.
+
+Every lesson.
+
+Every challenge.
+
+Every achievement.
+
+Every success.
+
+Thank you for walking this journey with us.
+
+We will always appreciate everything you have done for us.
+
+</p>
+
+<button onclick="nextSlide()">
+One Last Message
+</button>
+
+</section>
+
+<!-- Slide 17 -->
+
+<section class="slide ending" id="slide17">
+
+<h1>God Bless You</h1>
+
+<p>
+
+May God continue to bless you abundantly.
+
+May He strengthen you.
+
+May He guide every step you take.
+
+May He reward you for every life you have touched.
+
+We pray that His favour continues to surround you wherever you go.
+
+</p>
+
+</section>
+
+<!-- Confetti Canvas -->
+
+<canvas id="confettiCanvas"></canvas>
+
+<!-- Pop-up Messages -->
+
+<div id="popup" class="popup"></div>
+
+</body>
+
+</html>
